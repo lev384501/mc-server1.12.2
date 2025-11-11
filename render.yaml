@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: my-minecraft-server
+    env: docker
+    plan: free
+    docker:
+      dockerfile: Dockerfile
+    ports:
+      - port: 25565
+        protocol: TCP
